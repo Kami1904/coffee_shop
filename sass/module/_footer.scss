@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    .footer_header {
+        @include headerDisplay;
+        a {
+            color: $secondcolor;
+            font-size: 12px;
+        }
+        margin-bottom: 30px;
+    }
+    .footer_img{
+        @include logoDisplay;
+    }
+}

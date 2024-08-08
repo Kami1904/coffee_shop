@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.promo {
+  background: url(../../img/promo/promo_bg.png) no-repeat center/cover;
+  height: 640px;
+  color: white;
+  font-family: "Merienda";
+}
+.promo .header {
+  display: flex;
+  gap: 40px;
+  align-items: end;
+  padding: 30px 0 0 149px;
+}
+.promo .header a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+.promo .promo_desc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo .promo_desc h1 {
+  margin-top: 111px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.promo .promo_desc .promo_img {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+.promo .promo_desc p {
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+.promo .promo_desc .button {
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 14px;
+  color: white;
+  font-family: "Merienda";
+  cursor: pointer;
+}
+
+.about_desc {
+  max-width: 589px;
+  font-family: "Merienda";
+  margin: 0 auto 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about_desc h2 {
+  font-size: 24px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.about_desc .about_img {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 34px;
+  margin-bottom: 40px;
+}
+.about_desc p {
+  font-size: 14px;
+}
+.about_desc p:nth-child(2) {
+  margin-top: 30px;
+}
+
+.best {
+  background: url(../../img/best/best_bg.jpg) no-repeat center/cover;
+  min-height: 495px;
+  font-family: "Merienda";
+}
+.best h2 {
+  font-size: 24px;
+  padding-top: 80px;
+  margin-bottom: 39px;
+  text-align: center;
+}
+.best .best_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+  gap: 70px;
+}
+.best .best_grid .best_item {
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.6509803922);
+  border-radius: 8px;
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.best .best_grid .best_item div:nth-child(1) {
+  width: 151px;
+  height: 130px;
+}
+.best .best_grid .best_item div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.best .best_grid .best_item div:nth-child(2) {
+  width: 177px;
+}
+.best .best_grid .best_item div:nth-child(2) p:nth-child(1) {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 14px;
+}
+.best .best_grid .best_item div:nth-child(2) p:nth-child(2) {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer .footer_header {
+  display: flex;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.footer .footer_header a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+.footer .footer_header a {
+  color: black;
+  font-size: 12px;
+}
+.footer .footer_img {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+  .promo .header {
+    padding-left: 100px;
+  }
+  .promo .promo_desc h1 {
+    margin-top: 160px;
+  }
+  .best .best_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+  .promo .promo_desc h1 {
+    margin-top: 100px;
+  }
+  .best .best_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    gap: 20px;
+    row-gap: 20px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .promo .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .best h2 {
+    padding-top: 60px;
+  }
+  .best .best_grid {
+    justify-content: center;
+    align-items: center;
+  }
+}

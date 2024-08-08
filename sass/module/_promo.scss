@@ -1,0 +1,49 @@
+.promo {
+    background: url(../../img/promo/promo_bg.png) no-repeat center/cover;
+    height: 640px;
+    color: $maincolor;
+    font-family: $mainfontstyle;
+
+    .header {
+        @include headerDisplay;
+        padding: 30px 0 0 149px;
+    }
+
+
+
+    .promo_desc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin-top: 111px;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .promo_img {
+            @include logoDisplay;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 19px;
+        }
+
+        .button {
+            width: 120px;
+            height: 30px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 3px;
+
+            font-size: 14px;
+            color: $maincolor;
+            font-family: $mainfontstyle;
+            cursor: pointer;
+        }
+
+    }
+}

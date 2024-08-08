@@ -1,0 +1,56 @@
+$mainfontstyle: "Merienda";
+$maincolor: white;
+$secondcolor: black;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@mixin logoDisplay {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+@mixin headerDisplay {
+    display: flex;
+    gap: 40px;
+    align-items: end;
+
+    a {
+        color: $maincolor;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
+
+@mixin grid($col: 2, $row: 115px, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    grid-auto-rows: $row;
+    gap: $gap;
+}
+@mixin autoGrid($minmax: 220px, $width: 220px, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($minmax, $width));
+    gap: $gap;
+}
+
+@import "./module/promo";
+@import "./module/about";
+@import "./module/best";
+@import "./module/footer";
+@import "./module/media"
